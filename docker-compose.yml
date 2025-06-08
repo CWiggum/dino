@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  discord-bot:
+    build: .
+    container_name: dino
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}  # Assuming you have a .env or export DISCORD_TOKEN
+    restart: always  
+    volumes:
+      - .:/app  # Mount your current directory to the container (useful for development)
+    command: python dino.py
