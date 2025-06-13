@@ -1,5 +1,5 @@
 # Use the official Python image from Docker Hub
-FROM python:3.9-slim
+FROM python:3.12-slim
 # Set the working directory
 WORKDIR /app
 # Copy the requirements and install dependencies
